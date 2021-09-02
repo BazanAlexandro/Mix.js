@@ -1,48 +1,70 @@
-# Mix.js
+# Getting Started with Create React App
 
-[![travis](https://travis-ci.org/kevincennis/Mix.js.png)](https://travis-ci.org/kevincennis/Mix.js)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Multitrack mixing with the Web Audio API.
+## Available Scripts
 
-Documentation (and lots of cleanup) forthcoming.
+In the project directory, you can run:
 
-### Demo
+### `yarn start`
 
-[kevvv.in/mix](http://kevvv.in/mix)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Getting started (for Developers)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-##### Install Grunt
-`npm install -g grunt-cli` (may require `sudo`)
-##### Install Node dependencies
-`npm install`
-##### Build & Test
-`npm test` or `grunt`
-##### Start a local webserver at `http://localhost:8888`
-`npm start`
+### `yarn test`
 
-### Usage (for... Users)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* Download `mix.js.zip` from the [Releases](https://github.com/kevincennis/Mix.js/releases) page and unzip it
-* Put your own audio (mono mp3 or wav) in the `/sounds` directory
-* Edit `mix.json` to reflect your track names and audio URLs
-* Copy the directory to your webserver
+### `yarn build`
 
-To save a mix, open the dev tools in your browser and enter `JSON.stringify(App.mix.toJSON(), null, ' ')`
-and copy the output into `mix.json`.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Contributing
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Pull requests are completely welcome and appreciated. Before submitting, please make sure that your 
-code conforms to the [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/) style guide.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Tests
+### `yarn eject`
 
-Unfotunately, PhantomJS doesn't currently support the Web Audio API, which makes meaningful testing
-for most of Mix.js pretty much impossible. That said, if you write code which *can* be tested, please
-submit tests with your pull request.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Bugs
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Bugs should be filed on this repo's [Issues page](https://github.com/kevincennis/Mix.js/issues). Please
-include any relevant details (browser, OS, etc.) as well as steps to reproduce.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
