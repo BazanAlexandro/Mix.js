@@ -6,7 +6,7 @@ import * as Utils from '../utils/app.util'
 
 var Mix = Model.extend({
 
-	url: 'mix.json',
+	url: 'sounds/mix.json',
 
 	defaults: {
 		// mix name
@@ -182,7 +182,7 @@ var Mix = Model.extend({
 	},
 
 	persist: _.debounce(function() {
-		var self = App.mix,
+		var self = window.mix,
 			data = self.toJSON(),
 			binURI = self.get('binURI');
 		delete data.position;
