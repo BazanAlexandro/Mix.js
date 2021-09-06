@@ -1,6 +1,7 @@
 import { View } from 'backbone.marionette'
 import * as Utils from '../utils/app.util'
 import App from '../appInstance'
+import mixerAsJSON from '../utils/mixer-as-json'
 
 var Controls = View.extend({
 	template: `
@@ -10,6 +11,7 @@ var Controls = View.extend({
         <button class="btn-cntrl rw"></button>
         <button class="btn-cntrl play {{playing}}"></button>
         <button class="btn-cntrl ff"></button>
+        <button class="btn-cntrl export">export</button>
       </div>
   `,
 
@@ -23,7 +25,8 @@ var Controls = View.extend({
 		'click .rw'         : 'rewind',
 		'touchstart .rw'    : 'rewind',
 		'click .ff'         : 'fastForward',
-		'touchstart .ff'    : 'fastForward'
+		'touchstart .ff'    : 'fastForward',
+		'click .export'		: 'export'
 	},
 
 	ui: {
@@ -127,6 +130,10 @@ var Controls = View.extend({
 
 	unhide: function() {
 		this.$el.show();
+	},
+
+	export: function() {
+		mixerAsJSON()
 	}
 
 });
